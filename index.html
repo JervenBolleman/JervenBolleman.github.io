@@ -45,17 +45,20 @@
       h2, table, ol {
           padding-left: 0.5em;
       }
-      h3, h4 {
-          display:inline-block;
-          font-size: large;
+      @media screen {
+        h3, h4 {
+            display:inline-block;
+            font-size: large;
+        }
+        h4:before {
+          content: " - "
+        }
       }
       h3, h4, h5 {
           margin-top: 0.25em;
           margin-bottom: 0.25em;
       }
-      h4:before {
-          content: " - "
-      }
+     
       p {
           margin-top:0.25em;
           margin-bottom:0.25em;
