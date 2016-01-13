@@ -45,17 +45,23 @@
       h2, table, ol {
           padding-left: 0.5em;
       }
-      @media screen {
+      @media screen and (min-width: 30em){
         h3, h4 {
             display:inline-block;
-            font-size: large;
         }
         h4:before {
           content: " - "
         }
       }
-      h3, h4, h5 {
+      h3, h4 {
+          font-size: large;
+      }
+      h3, h4 {
           margin-top: 0.25em;
+          margin-bottom: 0.25em;
+      }
+      h5 {
+          margin-top: 0em;
           margin-bottom: 0.25em;
       }
      
@@ -65,6 +71,9 @@
       }
       th {
           vertical-align: top;
+      }
+      a {
+          color: darkslategrey;
       }
   </style>
 </head>
@@ -163,7 +172,7 @@
       </li>
       <li>
         <h3>Bachelor in Bioinformatics internship</h3>
-          <h4 property="alumniOf" typeof="Organization"><a property="url" href="https://www.ebi.ac.uk/"><span property="name"> European Molecular Biology Laboratory (EMBL) - European Bioinformatics Institute (EBI)</span>, Cambrige, United Kingdom</a></h4>
+          <h4 property="alumniOf" typeof="Organization"><a property="url" href="https://www.ebi.ac.uk/"><span property="name">European Bioinformatics Institute (EBI)</span></a>, Cambrige, United Kingdom</h4>
         <h5>2005-2006</h5>
         <p>Comparative study of a number of automated methods to functionally annotate proteins on the basis of knowledge in the Swiss-Prot part of the UniProtKB database. 
         Implemented and compared (data-mining) algorithms in Java as well as part of the data based parallelization work. Part of a strong team using test driven development to deliver high performance software. 
