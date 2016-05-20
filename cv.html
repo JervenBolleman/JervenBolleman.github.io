@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <title>The home page of Jerven Bolleman</title>
+  <style>
+      body {
+        font-size:medium;
+      }
+      section {
+        display:block;
+        font-family: Helvetica, sans-serif;
+        border-top: 1px solid black;
+        padding:1rem;
+      } 
+
+
+      #details {
+        border-top: none;
+      }
+
+      #details > span {
+        display:block;
+      }
+      th {
+        text-align:left;
+        min-width:15em;
+      }
+
+      ol {
+        list-style: none;
+        width: 100%;
+        position: relative;
+          
+          
+      }
+      ul {
+          list-style: disc;
+      }
+      ol >li {
+          
+      }
+      h2 {
+          font-size: large;
+      }
+      h2, table, ol {
+          padding-left: 0.5em;
+      }
+      @media screen and (min-width: 30em){
+        h3, h4 {
+            display:inline-block;
+        }
+        h4:before {
+          content: " - "
+        }
+      }
+      h3, h4 {
+          font-size: large;
+      }
+      h3, h4 {
+          margin-top: 0.25em;
+          margin-bottom: 0.25em;
+      }
+      h5 {
+          margin-top: 0em;
+          margin-bottom: 0.25em;
+      }
+     
+      p {
+          margin-top:0.25em;
+          margin-bottom:0.25em;
+      }
+      th {
+          vertical-align: top;
+      }
+      a {
+          color: darkslategrey;
+      }
+  </style>
+</head>
+<body vocab="http://schema.org/">
+<main typeof="Person">
+  <section id="details">
+    <h2>Personal details</h2>
+     <table>
+      <tr>
+        <th>Name</th>
+        <td><span property="givenName">Jerven</span> <span property="familyName">Bolleman</span></td>
+     </tr>
+     <tr>
+        <th>Birthdate</th>
+        <td><span property="birthDate">29-04-1983</span></td>
+     </tr>
+     <tr>
+      <th>E-Mail
+      </th>
+      <td>
+        <a property="email" href="mailto:me@jerven.eu">me@jerven.eu</a>
+      </td>
+     </tr>
+     <tr>
+      <th>Nationality</th>
+      <td property="nationality">Dutch</td>
+     </tr>
+     <tr>
+      <th>Work permit</th>
+      <td>Swiss - C</td>
+     </tr>
+   
+<tr>
+    <th rowspan="3">Professional social network</th >
+   <td><a href="http://ch.linkedin.com/in/jervenbolleman" property="sameAs">View my CV at LinkedIn</a> </td>
+    <tr>
+   <td><a href="http://www.twitter.com/jervenbolleman" property="sameAs">Tweets at twitter</a> </td>
+    </tr>      
+    </table>
+  </section>
+  <section id="experience">
+    <h2>Work experience</h2>
+    <ol>
+	   <li>
+        <h3><span property="jobTitle">Developer</span></h3>
+        <h4 property="worksFor" typeof="Organization"><a property="url" href="http://www.isb-sib.ch"><span property="name">Swiss Institute of Bioinformatics</span></a>, <span>Geneva, Switzerland</span></h4>
+        <h5>February 2008 - current</h5>
+           <div property="description">
+        <p>Worked with the team on</p>
+        <ul>
+          <li>Redesigning the UniProt consortium web presence with user experience experts in <span class="tech">HTML 5</span></li>
+          <li>Meeting the demands of the growing database (110x growth in 7 years)</li>
+        </ul>
+        <p>Was directly responsible for: <a href="http://www.uniprot.org">www.uniprot.org</a></p>
+        <ul>
+          <li>Month to month maintenance</li>
+          <li><span class="tech">JSON-LD</span> data representation</li>
+          <li><span class="tech">Berkley-DB/je</span> upgrades</li>
+          <li><span class="tech">Lucene</span> full text search and indexing strategies</li>  
+          <li>Multi site resilience and fail over setup</li>
+          <li><span class="tech">Java</span> 1.5 -> 1.8 migrations</li>
+          <li>Deployment strategies</li>
+          <li>Development and bringing into production the <a href="sparql.uniprot.org">public <span class="tech">SPARQL</span></a> endpoint</li> 
+        </ul>
+               </div>
+      </li>
+      <li>
+        <h3><span property="jobTitle">Java Software Engineer</span></h3>
+        <h4 typeof="Organization" property="alumniOf"><a property="url" href="http://www.ordina.nl"><span property="name">Ordina</span></a>, <span>Groningen, Netherlands</span></h4>
+        <h5>May 2005 - January 2008</h5>
+        <p>At Ordina I worked as part of a team developing and maintaining a Electronic Medical File system named <a href="http://www.kidos.nl/">Kidos</a>, for recording information of children aged 0-19, implement using J2EE application based on Struts and EJB 2. 
+        I introduced continuous integration to assist in guaranteeing software quality as well as reintroduced JUnit based testing.
+        I have taught courses in Java based technology to new employees as well as retraining others with an Oracle Forms/Designer background.</p>
+        <p>Worked with the team on</p>
+        <ul>
+          <li>Migrating the application from a BEA stack to an Oracle J2EE environment and from Java 1.4 to Java 5.</li>
+          <li>Maintained code using EJB2, Struts, Xslt and Oracle databases.</li>
+        </ul>
+        <p>Was directly responsible for:</p>
+        <ul>
+          <li>New functionality to track and register warning signs from multiple sources. e.g. a doctor reports suspicion of child abuse.</li>
+          <li>Updating the generation of automatic reports and forms using Apache FOP.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+  <section id="education">
+   <h2>Education</h2>
+   <ol>
+     <li>
+        <h3 >Bachelor in Bioinformatics</h3>
+        <h4 property="alumniOf" typeof="EducationalOrganization"><a property="url" href="https://www.hanze.nl/"><span property="name">Hanze University of Applied Sciences</span></a>, <span>Groningen, Netherlands</span></h4>
+        <h5><span>2002</span>-<span>2007</span></h5>
+        <p>A broad education in bio-informatics. Project orientated education dealing with questions derived from real academic or industry problems. For example in-silico modeling of micro-array probe cross hybridisation of a micro-array. Broad experience with a broad spectrum of languages and API's to solve problems such as Python, Java, Perl and dialects of SQL.
+        </p>
+      </li>
+      <li>
+        <h3>Bachelor in Bioinformatics internship</h3>
+          <h4 property="alumniOf" typeof="Organization"><a property="url" href="https://www.ebi.ac.uk/"><span property="name">European Bioinformatics Institute (EBI)</span></a>, Cambrige, United Kingdom</h4>
+        <h5>2005-2006</h5>
+        <p>Comparative study of a number of automated methods to functionally annotate proteins on the basis of knowledge in the Swiss-Prot part of the UniProtKB database. 
+        Implemented and compared (data-mining) algorithms in Java as well as part of the data based parallelization work. Part of a strong team using test driven development to deliver high performance software. 
+        Parts of my work in the team included assisting in building a possible new front end for the UniProt website using a Java based web front-end using the Tapestry framework.
+        </p>
+      </li>
+    </ol>
+  </section>
+  <section id="skills">
+   <h2>Skills</h2>
+   <ol>
+     <li>
+        <h3>Programming Languages</h3>
+        <ol>
+          <li>Java</li>
+          <li>SPARQL</li>
+          <li>Javascipt</li>
+          <li>BASH</li>
+        </ol>
+      </li>
+      <li>
+        <h3>Languages</h3>
+        <ol>
+          <li>Dutch</li>
+          <li>English</li>
+          <li>French</li>
+        </ol>
+      </li>
+    </ol>
+  </section>
+</main>
+</body> 
+
