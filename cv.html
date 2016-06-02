@@ -75,6 +75,10 @@
       a {
           color: darkslategrey;
       }
+      @media print {
+        .socialNetwork{display:none;}
+      }
+      #skills > ol > li {display:inline-box;width:40%;float:left;}
   </style>
 </head>
 <body vocab="http://schema.org/">
@@ -105,12 +109,11 @@
       <th>Work permit</th>
       <td>Swiss - C</td>
      </tr>
-   
-<tr>
+  <tr class="socialNetwork">
     <th rowspan="3">Professional social network</th >
    <td><a href="http://ch.linkedin.com/in/jervenbolleman" property="sameAs">View my CV at LinkedIn</a> </td>
     <tr>
-   <td><a href="http://www.twitter.com/jervenbolleman" property="sameAs">Tweets at twitter</a> </td>
+   <td class="socialNetwork"><a href="http://www.twitter.com/jervenbolleman" property="sameAs">Tweets at twitter</a> </td>
     </tr>      
     </table>
   </section>
@@ -196,9 +199,9 @@
       <li>
         <h3>Languages</h3>
         <ol>
-          <li>Dutch</li>
-          <li>English</li>
-          <li>French</li>
+          <li>Dutch (Fluent)</li>
+          <li>English (Fluent)</li>
+          <li>French (Basic)</li>
         </ol>
       </li>
     </ol>
